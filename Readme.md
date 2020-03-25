@@ -1,7 +1,7 @@
-# Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
+﻿# Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
-* Студент: [Игорь Нагибин](https://up.htmlacademy.ru/adaptive/19/user/784191).
-* Наставник: `Неизвестно`.
+* Студент: [Игорь Нагибин] (https://up.htmlacademy.ru/adaptive/19/user/784191).
+* Наставник: [Влад Башилов] (https://htmlacademy.ru/profile/id167603).
 
 ---
 
