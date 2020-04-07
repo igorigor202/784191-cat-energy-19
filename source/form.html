@@ -4,16 +4,20 @@
     <meta charset="utf-8">
     <title>HTML Academy: Кэтэнерджи форма</title>
     <link href="https://fonts.googleapis.com/css?family=Oswald:400,500,600,700&display=swap&subset=cyrillic-ext" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
 
     <header class="page-header">
-      <a class="page-header__logo">
-        <img src="https://via.placeholder.com/150x150" class="page-header__logo-image"  width="" height="" alt="Лого Кэтэнерджи">
-      </a>
-      <img src="https://via.placeholder.com/150x150" class="cat-energy__logo-title" width="" height="" alt="Лого заголовок">
+      <div class="page-header__wrapper-logo">
+        <a class="page-header__logo">
+          <img src="img/logo-mobile.svg" class="page-header__logo-image"  width="240" height="40" alt="Лого Кэтэнерджи">
+        </a>
+        <a class="main-nav__toggle">
+          <img src="img/icon-mobile-menu.svg" class="page-header__logo-menu" width="24" height="18" alt="Лого меню">
+        </a>
+      </div>
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--active">
@@ -36,75 +40,80 @@
         <fieldset>
           <legend class="form-main__title">Подбор Программы</legend>
           <div class="form-main__description"><p>Заполните анкету и мы подберем</p><p>Программу питания для вашего кота</p></div>
-          <div class="form-main__cat-information">
-            <div class="form-main__cat-name">
+
+          <div class="form-main__info">
+            <div class="form-main__info-item">
               <label for="cat-name">Имя:*</label>
-              <input class="form-input__cat-information" type="text" id="cat-name" name="name" placeholder="БАРСИК">
+              <input class="form-input" type="text" id="cat-name" name="name" placeholder="БАРСИК">
             </div>
-            <div class="form-main__cat-weight">
+            <div class="form-main__info-item">
               <label for="cat-weight">Вес (кг):*</label>
-              <input class="form-input__cat-information" type="text" id="cat-weight" name="weight" placeholder="7">
+              <input class="form-input" type="text" id="cat-weight" name="weight" placeholder="7">
             </div>
-            <div class="form-main__cat-age">
+            <div class="form-main__info-item">
               <label for="cat-age">Возраст (лет):</label>
-              <input class="form-input__cat-information" type="text" id="cat-age" name="age" placeholder="7">
+              <input class="form-input" type="text" id="cat-age" name="age" placeholder="7">
             </div>
           </div>
-          <div class="form-main__nutrition-result">
-            <div class="form-main__losing-weight">
-              <input class="form-input__nutrition-result" type="radio" name="losing-weight"  id="losing-weight">
+
+
+          <div class="form-main__info">
+            <div class="form-main__info-item">
+              <input class="form-input form-input--radio" type="radio" name="losing-weight"  id="losing-weight">
               <label for="losing-weight">ПОХУДЕНИЕ</label>
             </div>
-            <div class="form-main__mass-gain">
-              <input class="form-input__nutrition-result" type="radio" name="mass-gain"  id="mass-gain">
+            <div class="form-main__info-item">
+              <input class="form-input form-input--radio" type="radio" name="mass-gain"  id="mass-gain">
               <label for="mass-gain">НАБОР МАССЫ</label>
             </div>
-            <div class="form-main__no-answer">
-              <input class="form-input__nutrition-result" type="radio" name="no-answer"  id="no-answer">
+            <div class="form-main__info-item">
+              <input class="form-input form-input--radio" type="radio" name="no-answer"  id="no-answer">
               <label for="no-answer">НЕ ЗНАЮ (НУЖЕН ВАШ СОВЕТ)</label>
             </div>
           </div>
+
+
         </fieldset>
 
-        <fieldset>
-          <legend class="form-main__title-contacts"><p>Контактные данные</p><p>(владелец кота)</p></legend>
-          <div class="form-main__email">
+        <fieldset class="form-main__info">
+          <legend class="form-main__contacts-title"><p>Контактные данные</p><p>(владелец кота)</p></legend>
+          <div class="form-main__info-item">
             <label for="email">E-MAIL:*</label>
             <input class="form-input__email" type="email" id="email" name="email" placeholder="KUKLACHEV@GMAIL.COM">
           </div>
-          <div class="form-main__phone">
+          <div class="form-main__info-item">
             <label for="phone">ТЕЛЕФОН:*</label>
             <input class="form-input__email" type="tel" id="phone" name="phone" placeholder="8(960)900-60-90">
           </div>
         </fieldset>
 
-        <fieldset>
-          <legend class="form-main__title-comments">Комментарий</legend>
-          <textarea name="comments__about-cat" placeholder="РАССКАЖИТЕ ОБО ВСЕХ ПОВАДКАХ КОТА"></textarea>
+        <fieldset class="form-main__comments">
+          <legend class="form-main__comments-title">Комментарий</legend>
+          <textarea name="form-main__comments-about" placeholder="РАССКАЖИТЕ ОБО ВСЕХ ПОВАДКАХ КОТА"></textarea>
         </fieldset>
 
-        <fieldset>
+        <fieldset class="form-main__info">
           <legend class="form-main__extra-options">Допольнительно</legend>
-          <div class="form-main__sweetener">
-            <input class="form-input__sweetener" type="checkbox" name="sweetener"  id="sweetener">
+          <div class="form-main__info-item">
+            <input class="form-input form-input--radio" type="checkbox" name="sweetener"  id="sweetener">
             <label for="sweetener">САХАРОЗАМЕНИТЕЛЬ</label>
           </div>
-          <div class="form-main__water">
-            <input class="form-input__sweetener" type="checkbox" name="water"  id="water">
+          <div class="form-main__info-item">
+            <input class="form-input form-input--radio" type="checkbox" name="water"  id="water">
             <label for="water">ПИТЬЕВАЯ ВОДА</label>
           </div>
-          <div class="form-main__milk">
-            <input class="form-input__milk" type="checkbox" name="milk"  id="milk">
+          <div class="form-main__info-item">
+            <input class="form-input form-input--radio" type="checkbox" name="milk"  id="milk">
             <label for="milk">МОЛОКО</label>
           </div>
-          <div class="form-main__vitamins">
-            <input class="form-input__vitamins" type="checkbox" name="vitamins"  id="vitamins">
+          <div class="form-main__info-item">
+            <input class="form-input form-input--radio" type="checkbox" name="vitamins"  id="vitamins">
             <label for="vitamins">ВИТАМИНЫ</label>
           </div>
         </fieldset>
 
-        <div class="form-main__submit-block">
-          <button class="form-main__submit-button" type="submit">ОТПРАВИТЬ ЗАЯВКУ</button>
+        <div class="form-main__button">
+          <button class="form-main__button-submit type="submit">ОТПРАВИТЬ ЗАЯВКУ</button>
         </div>
 
       </form>
@@ -113,26 +122,28 @@
       </div>
     </section>
 
-    <section class="contacts-map">
+    <section class="contacts">
       <div class="contacts-information">
         <div class="contacts-information__invite-job">Приглашаем к сотрудничеству диллеров!</div>
         <div class="contacts-information__adress">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</div>
       </div>
-      <div class="contacts-map__map">
-        <img src="https://via.placeholder.com/150x150" class="nutrition-description__social-logo" width="" height="" alt="Карта где находится офис">
+      <div class="contacts__map">
+        <img src="img/bg-map-mobile@1x.png" class="nutrition-description__social-logo" width="320" height="400" alt="Карта где находится офис">
       </div>
     </section>
 
     <footer class="page-footer">
-      <img src="https://via.placeholder.com/150x150" class="cat-energy__logo-title" width="" height="" alt="Лого заголовок">
+      <img src="img/logo-footer.svg" class="cat-energy__logo-title" width="128" height="24" alt="Лого заголовок">
       <div class="page-footer__social social">
-        <a href="#"><img src="https://via.placeholder.com/150x150" class="nutrition-description__social-logo" width="" height="" alt="Лого вк"></a>
-        <a href="#"><img src="https://via.placeholder.com/150x150" class="nutrition-description__social-logo" width="" height="" alt="Лого инстаграм"></a>
-        <a href="#"><img src="https://via.placeholder.com/150x150" class="nutrition-description__social-logo" width="" height="" alt="Лого фейсбука"></a>
+        <div class="page-footer__social-icons">
+          <a href="#"><img src="img/icon-vk.svg" class="nutrition-description__social-logo" width="18" height="12" alt="Лого вк"></a>
+          <a href="#"><img src="img/icon-insta.svg" class="nutrition-description__social-logo" width="22" height="12" alt="Лого инстаграм"></a>
+          <a href="#"><img src="img/icon-fb.svg" class="nutrition-description__social-logo" width="22" height="12" alt="Лого фейсбука"></a>
+        </div>
       </div>
       <div class="page-footer__copyright copyright">
         <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-        <img src="https://via.placeholder.com/150x150" class="page-footer__copyright-logo" width="" height="" alt="Лого htmlacademy"></a>
+        <img src="img/htmlacademy.svg" class="page-footer__copyright-logo" width="27" height="34" alt="Лого htmlacademy"></a>
       </div>
     </footer>
 
