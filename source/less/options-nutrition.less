@@ -1,22 +1,74 @@
 .options-nutrition {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  max-width: 320px;
+  align-items: center;
   margin-top: 22px;
+
+  &__item {
+    background-color: #f2f2f2;
+    width: 280px;
+    height: 267px;
+    margin-bottom: 20px;
+  }
+
+  &__title {
+    font-weight: normal;
+    font-size: 24px;
+    text-transform: uppercase;
+    margin-left: 20px;
+  }
+
+  &__text {
+    display: block;
+    font-size: 14px;
+    font-family: 'Arial', sans-serif;
+    margin-left: 20px;
+    max-width: 240px;
+    border-bottom: 1px solid #d9d9d9;
+    margin-top: 23px;
+    padding-bottom: 25px;
+  }
+
+  &__open-catalog {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    margin-left: 20px;
+    text-transform: uppercase;
+    font-size: 16px;
+    color: black;
+  }
+
+  &__logo {
+    display: flex;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background-color:#68b738;
+    border-radius: 50%;
+    margin-left: 20px;
+  }
+
+  &__logo-text {
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+  }
 }
 
-.options-nutrition__item {
-  background-color: #f2f2f2;
-  width: 280px;
-  height: 267px;
-  margin-bottom: 20px;
+.losing-weight__logo-img {
+  position: relative;
+  top: -3px;
+  left: 6px;
 }
 
-.options-nutrition__title {
-  font-weight: normal;
-  font-size: 24px;
-  text-transform: uppercase;
+.gain-weight__logo {
+  position: relative;
+  left: -10px;
 }
 
-.options-nutrition__text {
-  font-size: 14px;
-  font-family: 'Arial', sans-serif;
+.arrow-transition {
+  margin-left: 10px;
 }
-
