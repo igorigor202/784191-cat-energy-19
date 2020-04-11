@@ -28,6 +28,7 @@
   &__border {
     width: 100%;
     width: 320px;
+    border-top: 1px solid #e6e6e6;
     border-bottom: 1px solid #e6e6e6;
   }
 
@@ -135,6 +136,7 @@ textarea::placeholder {
   text-align: center;
   font-size: 16px;
   font-family: 'Oswald', sans-serif;
+  padding-top: 15px;
 }
 
 
@@ -143,6 +145,7 @@ textarea::placeholder {
   height: 45px;
   border: 1px solid #e6e6e6;
   margin-left: 15px;
+  padding-left: 15px;
 
   &__email {
     width: 220px;
@@ -151,6 +154,7 @@ textarea::placeholder {
     margin-left: 15px;
     font-size: 16px;
     font-family: 'Oswald', sans-serif;
+    padding-left: 15px;
   }
 
   &__tel {
@@ -160,6 +164,8 @@ textarea::placeholder {
     margin-left: 15px;
     font-size: 16px;
     font-family: 'Oswald', sans-serif;
+    padding-left: 15px;
+    letter-spacing: 1px;
   }
 
   &__width-name {
@@ -219,21 +225,19 @@ textarea::placeholder {
   display: block;
   width: 30px;
   height: 30px;
-  background: url("../img/tick.svg") no-repeat;
-  background-size: 30px 30px;
   position: absolute;
   top: -5px;
-  left: 0;
+  left: 10px;
   z-index: 2;
-  opacity: 0;
-}
-
-.form-input__checkbox:checked + .form-label__checkbox::before {
-  background-color: green;
 }
 
 .form-input__checkbox:checked + .form-label__checkbox::after {
-  opacity: 1;
+  display: inline-block;
+  transform: rotate(45deg);
+  height: 20px;
+  width: 12px;
+  border-bottom: 2px solid #78b13f;
+  border-right: 2px solid #78b13f;
 }
 
 .form-label__radio::before {
