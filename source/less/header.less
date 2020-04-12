@@ -1,14 +1,67 @@
 .page-header {
   max-width: 320px;
 
+  &__wrapper {
+    display: flex;
+    width: 100%;
+    max-width: 320px;
+    border-bottom: 1px solid #e6e6e6;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
   &__wrapper-logo {
     display: flex;
     width: 100%;
     max-width: 280px;
     align-items: center;
     margin: 0 auto;
-    justify-content: space-between;
   }
+
+  &__logo-image {
+    position: relative;
+    left: -28px;
+  }
+
+  &__logo-menu {
+    position: relative;
+    left: -6px;
+    top: 2px
+  }
+}
+
+// .main-nav__list {
+//   overflow: hidden;
+//   height: 0;
+//   opacity: 0;
+//   transition: all 0.5s ease-in;
+// }
+
+.main-nav {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 320px;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.site-list__item {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.site-list__item:nth-child(2) {
+  width: 320px;
+  border-top: 1px solid #e6e6e6;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.main-nav__list a {
+  color: black;
+  font-size: 20px;
+  font-weight: 500;
 }
 
 
