@@ -10,13 +10,15 @@
   <body>
 
     <header class="page-header">
-      <div class="page-header__wrapper-logo">
-        <a class="page-header__logo">
-          <img src="img/logo-mobile.svg" class="page-header__logo-image"  width="240" height="40" alt="Лого Кэтэнерджи">
-        </a>
-        <a class="main-nav__toggle">
-          <img src="img/icon-mobile-menu.svg" class="page-header__logo-menu" width="24" height="18" alt="Лого меню">
-        </a>
+      <div class="page-header__wrapper">
+        <div class="page-header__wrapper-logo">
+          <a href="#" class="page-header__logo">
+            <img src="img/logo-mobile.svg" class="page-header__logo-image"  width="260" height="40" alt="Лого Кэтэнерджи">
+          </a>
+          <a class="main-nav__toggle">
+            <img src="img/icon-mobile-menu.svg" class="page-header__logo-menu" width="24" height="18" alt="Лого меню">
+          </a>
+        </div>
       </div>
       <nav class="main-nav">
         <div class="main-nav__wrapper">
@@ -25,10 +27,10 @@
               <a href="#">Главная</a>
             </li>
             <li class="site-list__item">
-              <a href="#">Каталог Продукции</a>
+              <a href="catalog.html">Каталог Продукции</a>
             </li>
             <li class="site-list__item">
-              <a href="#">Подбор Программы</a>
+              <a href="form.html">Подбор Программы</a>
             </li>
           </ul>
         </div>
@@ -37,11 +39,13 @@
 
     <main class="page-main">
       <img src="img/index-background-mobile@1x.jpg" class="page-main__background-img" width="320" height="305" alt="Задний фон с котом">
-      <h1 class="page-main__title">
-        Функциональное питание для котов
-      </h1>
-      <div class="page-main__title-text">
-        Занялся собой? Займись котом!
+      <div class="page-main__wrapper-text">
+        <h1 class="page-main__title">
+          Функциональное питание для котов
+        </h1>
+        <div class="page-main__title-text">
+          Занялся собой? Займись котом!
+        </div>
       </div>
       <img src="img/index-can-mobile@1x.png" class="page-main__box-nutrition" width="280" height="270" alt="Упаковка с кормом">
       <button class="page-main__choose-program">Подобрать Программу</button>
@@ -50,19 +54,27 @@
     <section class="options-nutrition">
 
       <div class="options-nutrition__item">
-        <img src="img/icon-cat-slim.svg" class="losing-weight__logo" width="35" height="49" alt="Лого похудение">
-        <h2 class="options-nutrition__title">Похудение</h2>
+        <div class="options-nutrition__logo-text">
+          <div class="options-nutrition__logo">
+            <img src="img/icon-cat-slim.svg" class="losing-weight__logo-img" width="35" height="49" alt="Лого похудение">
+          </div>
+          <h2 class="options-nutrition__title">Похудение</h2>
+        </div>
         <div class="options-nutrition__text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</div>
-        <a href="#" class="losing-weight__open-catalog">
+        <a href="#" class="options-nutrition__open-catalog">
           Каталог Slim <img src="img/icon-right-arrow-long.svg" class="arrow-transition" width="24" height="11" alt="Стрелка перехода в каталог">
         </a>
       </div>
 
       <div class="options-nutrition__item">
-        <img src="img/icon-cat-pro.svg" class="gain-weight__logo" width="67" height="28" alt="Лого набор массы">
-        <h2 class="options-nutrition__title">Набор массы</h2>
+        <div class="options-nutrition__logo-text">
+          <div class="options-nutrition__logo">
+            <img src="img/icon-cat-pro.svg" class="gain-weight__logo" width="67" height="28" alt="Лого набор массы">
+          </div>
+          <h2 class="options-nutrition__title">Набор массы</h2>
+        </div>
         <div class="options-nutrition__text">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</div>
-        <a href="#" class="losing-weight__open-catalog">
+        <a href="#" class="options-nutrition__open-catalog">
           Каталог PRO <img src="img/icon-right-arrow-long.svg" class="arrow-transition" width="24" height="11" alt="Стрелка перехода в каталог">
         </a>
       </div>
@@ -73,25 +85,25 @@
       <h2 class="nutrition-description__title">Как это работает</h2>
       <div class="nutrition-description__paragraph">
         <div class="nutrition-description__wrapper">
-          <img src="img/advantage-leaf@1x.png" class="nutrition-description__logo" width="40" height="40" alt="Лого параграфа">
+          <img src="img/advantage-leaf@1x.png" class="nutrition-description__logo" width="50" height="50" alt="Лого параграфа">
         </div>
         <p class="nutrition-description__paragraph-text">Функциональное питание содержит только полезные питательные вещества.</p>
       </div>
       <div class="nutrition-description__paragraph">
         <div class="nutrition-description__wrapper">
-          <img src="img/advantage-powder@1x.png" class="nutrition-description__logo" width="40" height="40" alt="Лого параграфа">
+          <img src="img/advantage-powder@1x.png" class="nutrition-description__logo" width="50" height="50" alt="Лого параграфа">
         </div>
         <p class="nutrition-description__paragraph-text">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
       </div>
       <div class="nutrition-description__paragraph">
         <div class="nutrition-description__wrapper">
-          <img src="img/advantage-dining@1x.png" class="nutrition-description__logo" width="40" height="40" alt="Лого параграфа">
+          <img src="img/advantage-dining@1x.png" class="nutrition-description__logo" width="50" height="50" alt="Лого параграфа">
         </div>
         <p class="nutrition-description__paragraph-text">Замените один-два приема обычной еды на наше функциональное питание.</p>
       </div>
       <div class="nutrition-description__paragraph">
         <div class="nutrition-description__wrapper">
-          <img src="img/advantage-clock@1x.png" class="nutrition-description__logo" width="40" height="40" alt="Лого параграфа">
+          <img src="img/advantage-clock@1x.png" class="nutrition-description__logo" width="50" height="50" alt="Лого параграфа">
         </div>
         <p class="nutrition-description__paragraph-text">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
       </div>
@@ -101,8 +113,8 @@
       <h2 class="example__title">Живой пример</h2>
       <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
       <div class="example-result">
-        <div  class="example-result__paragraph"><p class="example-result__bold-text">5 КГ</p><p class="example-result__small-text">снижение веса</p></div>
-        <div  class="example-result__paragraph"><p class="example-result__bold-text">60 ДНЕЙ</p><p class="example-result__small-text">затрачено времени</p></div>
+        <div class="example-result__paragraph"><p class="example-result__bold-text">5 КГ</p><p class="example-result__small-text">снижение веса</p></div>
+        <div class="example-result__paragraph"><p class="example-result__bold-text">60 ДНЕЙ</p><p class="example-result__small-text">затрачено времени</p></div>
       </div>
       <div class="example__expenses">Затраты на питание: 15 000 руб.</div>
       <div class="example__photo">
@@ -135,7 +147,7 @@
         </div>
       </div>
       <div class="page-footer__copyright copyright">
-        <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
         <img src="img/htmlacademy.svg" class="page-footer__copyright-logo" width="27" height="34" alt="Лого htmlacademy"></a>
       </div>
     </footer>

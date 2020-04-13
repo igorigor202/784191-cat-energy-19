@@ -1,26 +1,55 @@
-.page-main__title {
-  position: relative;
-  width: 280px;
-  color: #ffffff;
-  font-weight: normal;
-  font-size: 36px;
-  text-align: center;
-  margin-top: -290px;
-  line-height: 1.1;
+.page-main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 320px;
+  align-items: center;
+
+  &__title {
+    color: #ffffff;
+    font-weight: normal;
+    font-size: 36px;
+  }
+
+  &__title-text {
+    text-transform: uppercase;
+    font-style: 14px;
+    width: 280px;
+    text-align: center;
+    color: #ffffff;
+    margin-top: 25px;
+  }
+
+  &__box-nutrition {
+    margin-top: 20px;
+  }
+
+  &__choose-program {
+    font-family: 'Oswald', sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: #68b738;
+    width: 280px;
+    height: 40px;
+    margin: 0 auto;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+  }
+
+  &__wrapper-text {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 0 auto;
+    width: 280px;
+    height: 130px;
+    margin-top: -290px;
+    line-height: 1.1;
+  }
 }
 
-.page-main__title-text {
-  text-transform: uppercase;
-  font-style: 14px;
-  width: 280px;
-  text-align: center;
-  color: #ffffff;
-  margin-top: 15px;
-  margin-bottom: 40px;
-}
-
-.page-main__choose-program {
-  font-size: 14px;
-  text-transform: uppercase;
-  color: #ffffff;
+.main-nav__toggle {
+  cursor: pointer;
 }

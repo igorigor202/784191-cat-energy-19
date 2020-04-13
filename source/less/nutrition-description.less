@@ -1,21 +1,37 @@
-.nutrition-description__paragraph {
+.nutrition-description {
   display: flex;
-  margin-bottom: 20px;
+  width: 100%;
+  flex-direction: column;
+  max-width: 320px;
+
+  &__title{
+    margin-left: 20px;
+    margin-bottom: 20px;
+    font-weight: normal;
+    font-size: 36px;
+  }
+
+  &__paragraph{
+    display: flex;
+    margin-bottom: 20px;
+    margin-left: 20px;
+  }
+
+  &__wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    background-color: #68b738;
+  }
+
+  &__paragraph-text{
+    width: 200px;
+    height: 60px;
+    font-family: 'Arial', sans-serif;
+    margin-left: 20px;
+    font-size: 14px;
+  }
 }
 
-.nutrition-description__title {
-  font-weight: normal;
-  font-size: 36px;
-}
-
-.nutrition-description__wrapper {
-  width: 60px;
-  height: 60px;
-  background-color: #68b738;
-}
-
-.nutrition-description__paragraph-text {
-  width: 223px;
-  height: 60px;
-  font-family: 'Arial', sans-serif;
-}

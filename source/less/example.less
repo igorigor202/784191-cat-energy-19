@@ -1,12 +1,18 @@
 .example {
-  width: 320px;
-  height: 705px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 320px;
   background-color: #f2f2f2;
+  margin-top: 20px;
 
   &__title {
+  display: block;
   font-size: 36px;
   font-weight: normal;
   margin-left: 20px;
+  margin-top: 40px;
+  width: 200px;
   }
 
   &__description {
@@ -14,8 +20,35 @@
   font-size: 14px;
   width: 270px;
   height: 115px;
-  margin-top: 38px;
+  margin-top: 40px;
   margin-left: 20px;
+  }
+
+  &__expenses{
+    font-size: 14px;
+    text-transform: uppercase;
+    width: 212px;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 25px;
+  }
+
+  &__was-become{
+    display: flex;
+    max-width: 226px;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+
+  &__text{
+    font-size: 16px;
+    text-transform: uppercase;
+  }
+
+  &__slider {
+    margin-right: 20px;
+    margin-left: 20px;
   }
 }
 
@@ -23,39 +56,38 @@
   display: flex;
   justify-content: space-between;
   width: 100%;
-  width: 280px;
+  max-width: 280px;
   margin: 0 auto;
-}
 
-.example-result__bold-text {
-  font-weight: 600;
-  font-size: 24px;
-}
+  &__paragraph {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-.example-result__small-text {
-  font-size: 12px;
-  font-family: 'Arial', sans-serif;
-  width: 65px;
-  height: 26px;
-  text-align: center;
-}
+  &__bold-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 400;
+    font-size: 24px;
+    border: 1px solid #cdcdcd;
+    border-radius: 5%;
+    white-space: nowrap;
+    width: 124px;
+    height: 57px;
+  }
 
-.example__expenses {
-  font-size: 14px;
-  text-transform: uppercase;
-  width: 212px;
-  margin: 0 auto;
-  margin-top: 25px;
-}
-
-.example__was-become {
-  max-width: 206px;
-  margin: 0 auto;
-}
-
-.example__text {
-  font-size: 16px;
-  text-transform: uppercase;
+  &__small-text {
+    position: relative;
+    font-size: 12px;
+    font-family: 'Arial', sans-serif;
+    width: 70px;
+    height: 26px;
+    text-align: center;
+    background-color: #f2f2f2;
+    top: -10px;
+  }
 }
 
 
