@@ -33,5 +33,84 @@
     margin-left: 20px;
     font-size: 14px;
   }
+
+  &__number {
+    display: none;
+  }
+}
+
+
+
+
+@media (min-width: @tablet-width) {
+  .nutrition-description {
+    max-width: @tablet-width;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 33px;
+    border-bottom: 1px solid #e6e6e6;
+
+
+    &__title{
+      margin-left: 30px;
+      margin-bottom: 20px;
+      font-weight: normal;
+      font-size: 60px;
+      line-height: 0.8;
+      margin-bottom: 54px;
+    }
+
+    &__paragraph{
+      display: flex;
+      margin-bottom: 20px;
+      margin-left: 30px;
+      width: 340px;
+      height: 270px;
+    }
+
+    &__wrapper{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 80px;
+      height: 80px;
+      background-color: #68b738;
+    }
+
+    &__paragraph-text{
+      width: 250px;
+      height: 60px;
+      font-family: 'Arial', sans-serif;
+      margin-left: 0px;
+      font-size: 16px;
+      z-index: 2;
+      position: absolute;
+      margin-top: 120px;
+      line-height: 1.2;
+    }
+
+    &__number {
+      display: block;
+      position: absolute;
+      font-size: 281px;
+      color: #f2f2f2;
+      z-index: 1;
+      margin-left: 115px;
+      margin-top: -105px;
+    }
+  }
+}
+
+
+@media (min-width: @desktop-width) {
+  .nutrition-description {
+    background-color: blue;
+    max-width: @desktop-width;
+  }
+
+  .logo {
+    display: block;
+  }
 }
 

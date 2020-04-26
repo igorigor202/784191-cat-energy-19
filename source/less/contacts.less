@@ -15,10 +15,84 @@
     width: 140px;
     font-size: 14px;
     font-family: 'Arial', sans-serif;
+    line-height: 1.3;
   }
 
   &__slider{
     margin-right: 13px;
     margin-left: 13px;
+  }
+}
+
+.contacts__map {
+  background: url(../img/bg-map-mobile@1x.png) no-repeat;
+  background-size: 320px 400px;
+  width: 320px;
+  height: 400px;
+}
+
+
+@media (min-width: @tablet-width) {
+  .contacts-information {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-top: 65px;
+    margin-bottom: 65px;
+    align-items: flex-start;
+    width: 623px;
+
+    &__invite-job{
+      width: 160px;
+      font-size: 20px;
+      text-transform: uppercase;
+    }
+
+    &__adress{
+      width: 170px;
+      font-size: 16px;
+      font-family: 'Arial', sans-serif;
+      text-align: right;
+      line-height: 1.3;
+    }
+
+    &__slider{
+      margin-right: 13px;
+      margin-left: 13px;
+    }
+
+    &__adress--margin {
+      position: relative;
+      top: 27px;
+    }
+
+
+  }
+
+  .contacts {
+    max-width: @tablet-width;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0px;
+
+
+    &__map {
+      background: url(../img/bg-map-tablet@1x.png) no-repeat;
+      background-size: 768px 400px;
+      width: 768px;
+      height: 400px;
+    }
+  }
+}
+
+
+@media (min-width: @desktop-width) {
+  .contacts {
+    background-color: blue;
+    max-width: @desktop-width;
+  }
+
+  .logo {
+    display: block;
   }
 }
