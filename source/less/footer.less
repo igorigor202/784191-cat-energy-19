@@ -157,3 +157,34 @@
     font-size: 16px;
   }
 }
+
+
+@media (min-width: @desktop-width) {
+  .page-footer {
+    width: 100%;
+    max-width: 1440px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 150px;
+
+    &__copyright-logo {
+      position: relative;
+      left: 30px;
+    }
+
+    &__logo {
+      position: relative;
+      left: -30px;
+    }
+  }
+
+  .copyright__link {
+    position: relative;
+    color: #444444;
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    left: 30px;
+  }
+}

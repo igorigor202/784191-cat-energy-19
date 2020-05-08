@@ -103,14 +103,68 @@
 }
 
 
+
+
 @media (min-width: @desktop-width) {
   .nutrition-description {
-    background-color: blue;
     max-width: @desktop-width;
-  }
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 83px;
+    border-bottom: none;
+    margin-left: 111px;
+    justify-content: space-between;
 
-  .logo {
-    display: block;
+
+    &__title{
+      width: 100%;
+      margin-left: 0px;
+      margin-bottom: 0px;
+      font-weight: normal;
+      font-size: 60px;
+      line-height: 0.8;
+      margin-bottom: 54px;
+    }
+
+    &__paragraph{
+      display: flex;
+      margin-bottom: 20px;
+      margin-left: 0px;
+      max-width: 250px;
+      height: 270px;
+    }
+
+    &__wrapper{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 80px;
+      height: 80px;
+      background-color: #68b738;
+    }
+
+    &__paragraph-text{
+      width: 250px;
+      height: 60px;
+      font-family: 'Arial', sans-serif;
+      margin-left: 0px;
+      font-size: 16px;
+      z-index: 2;
+      position: absolute;
+      margin-top: 120px;
+      line-height: 1.2;
+    }
+
+    &__number {
+      display: block;
+      position: absolute;
+      font-size: 281px;
+      color: #f2f2f2;
+      z-index: 1;
+      margin-left: 115px;
+      margin-top: -105px;
+    }
   }
 }
 

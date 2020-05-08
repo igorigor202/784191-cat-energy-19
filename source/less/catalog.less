@@ -33,6 +33,7 @@
     font-size: 16px;
     text-transform: uppercase;
     margin-bottom: 5px;
+    width: 100px;
   }
 
   &__list-description{
@@ -51,6 +52,55 @@
     justify-content: space-between;
     color: #444444;
   }
+
+  &__logo-item--1 {
+    background: url(../img/chicken-small-mobile@1x.jpg) no-repeat;
+    background-size: 140px 144px;
+    width: 140px;
+    height: 144px;
+  }
+
+  &__logo-item--2 {
+    background: url(../img/chicken-big-mobile@1x.jpg) no-repeat;
+    background-size: 140px 144px;
+    width: 140px;
+    height: 144px;
+  }
+
+  &__logo-item--3 {
+    background: url(../img/chicken-small-mobile@1x.jpg) no-repeat;
+    background-size: 140px 144px;
+    width: 140px;
+    height: 144px;
+  }
+
+  &__logo-item--4 {
+    background: url(../img/fish-big-mobile@1x.jpg) no-repeat;
+    background-size: 140px 144px;
+    width: 140px;
+    height: 144px;
+  }
+
+  &__logo-item--5 {
+    background: url(../img/buckwheat-small-mobile@1x.jpg) no-repeat;
+    background-size: 140px 144px;
+    width: 140px;
+    height: 144px;
+  }
+
+  &__logo-item--6 {
+    background: url(../img/buckwheat-big-mobile@1x.jpg) no-repeat;
+    background-size: 140px 144px;
+    width: 140px;
+    height: 144px;
+  }
+
+  &__logo-item--7 {
+    background: url(../img/rice-small-mobile@1x.jpg) no-repeat;
+    background-size: 140px 144px;
+    width: 140px;
+    height: 144px;
+  }
 }
 
 .show-more {
@@ -68,6 +118,11 @@
   &__logo-plus {
     display: flex;
     justify-content: center;
+    background: url(../img/icon-plus-mobile.svg) no-repeat;
+    background-size: 30px 30px;
+    width: 30px;
+    height: 30px;
+    margin: 0 auto;
   }
 
   &__text {
@@ -127,20 +182,11 @@
     top: -45px;
   }
 
-  &__title {
-    font-size: 16px;
-    font-weight: normal;
-    text-transform: uppercase;
-  }
-
   &__descrtiption {
     display: flex;
     justify-content: space-between;
   }
 
-  &__logo-img {
-    opacity: 0.2;
-  }
 }
 
 .additional-item {
@@ -148,12 +194,18 @@
   border-bottom: 1px solid #e6e6e6;
   margin: 0 auto;
 
-  &__descrtiption-text{
+  &__title {
+    font-size: 16px;
+    font-weight: normal;
+    text-transform: uppercase;
+  }
+
+  &__descrtiption-text {
     font-size: 14px;
     font-family: 'Arial', sans-serif;
   }
 
-  &__title-descrtiption{
+  &__title-descrtiption {
     display: flex;
     width: 100%;
     max-width: 280px;
@@ -169,6 +221,14 @@
   height: 290px;
   text-align: center;
 
+  &__case-photo {
+    background: url(../img/gift-photo-mobile@1x.jpg) no-repeat;
+    background-size: 280px 289px;
+    width: 280px;
+    height: 289px;
+    margin: 0 auto;
+  }
+
   &__img-text {
     margin-top: -230px;
     margin-bottom: 100px;
@@ -182,6 +242,14 @@
     text-align: center;
     margin: 0 auto;
     margin-top: 57px;
+  }
+
+  &__present-logo {
+    background: url(../img/icon-gift.svg) no-repeat;
+    background-size: 55px 60px;
+    width: 55px;
+    height: 60px;
+    margin-left: 133px;
   }
 }
 
@@ -209,4 +277,432 @@
   margin-top: 15px;
   border: none;
   outline: none;
+}
+
+
+
+
+
+
+@media (min-width: @tablet-width) {
+  .catalog-nutrition {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: @tablet-width;
+
+    justify-content: space-around;
+
+
+    &__title {
+      position: absolute;
+      border-top: none;
+      border-bottom: none;
+      font-size: 60px;
+      font-weight: 400;
+      text-align: left;
+      padding: 0px 0px 0px 0px;
+      left: 30px;
+    }
+
+    &__block {
+      width: 100%;
+      max-width: 324px;
+      height: 432px;
+      background-color: #f2f2f2;
+      border-bottom: none;
+      margin-top: 140px;
+      z-index: 1;
+    }
+
+    &__block--top {
+      margin-top: 260px;
+    }
+
+    &__block--last {
+      position: relative;
+      left: -190px;
+    }
+
+    &__item {
+      width: 100%;
+      max-width: 280px;
+      margin: 0 auto;
+      padding: 10px 0 20px 0;
+    }
+
+    &__wrapper-information {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__item-description {
+      display: flex;
+      justify-content: center;
+      font-size: 16px;
+      text-transform: uppercase;
+      margin-bottom: 5px;
+      z-index: 2;
+      text-align: center;
+      margin-bottom: 30px;
+      width: 120px;
+      margin: 0 auto;
+      margin-bottom: 20px;
+    }
+
+    &__list-description{
+      display: flex;
+      flex-direction: column;
+      height: 70px;
+      font-size: 16px;
+      font-family: 'Arial', sans-serif;
+      justify-content: space-between;
+
+    }
+
+    &__item-description--small {
+      display: flex;
+      width: 250px;
+      justify-content: space-between;
+      color: #444444;
+      padding: 3px 0 3px 0;
+      border-bottom: 1px solid #cdcdcd;
+    }
+
+    &__logo-item--1 {
+      background-image: url(../img/chicken-small-tablet@1x.png) no-repeat;
+      background-color: red;
+      background-size: 160px 172px;
+      width: 160px;
+      height: 172px;
+      z-index: 1;
+    }
+
+    &__logo-item--2 {
+      background-image: url(../img/chicken-big-tablet@1x.jpg) no-repeat;
+      background-size: 160px 172px;
+      width: 160px;
+      height: 172px;
+      z-index: 1;
+    }
+
+    &__logo-item--3 {
+      background-image: url(../img/chicken-small-tablet@1x.jpg) no-repeat;
+      background-size: 160px 172px;
+      width: 160px;
+      height: 172px;
+      z-index: 1;
+    }
+
+    &__logo-item--4 {
+      background-image: url(../img/fish-big-tablet@1x.jpg) no-repeat;
+      background-size: 160px 172px;
+      width: 160px;
+      height: 172px;
+      z-index: 1;
+    }
+
+    &__logo-item--5 {
+      background-image: url(../img/buckwheat-small-tablet@1x.jpg) no-repeat;
+      background-size: 160px 172px;
+      width: 160px;
+      height: 172px;
+      z-index: 1;
+    }
+
+    &__logo-item--6 {
+      background-image: url(../img/buckwheat-big-tablet@1x.jpg) no-repeat;
+      background-size: 160px 172px;
+      width: 160px;
+      height: 172px;
+      z-index: 1;
+    }
+
+    &__logo-item--7 {
+      background-image: url(../img/rice-small-tablet@1x.jpg) no-repeat;
+      background-size: 160px 172px;
+      width: 170px;
+      height: 172px;
+      z-index: 1;
+    }
+  }
+
+  .button {
+    cursor: pointer;
+    font-family: 'Oswald', sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: white;
+    background-color: #68b738;
+    width: 250px;
+    height: 40px;
+    border: none;
+    outline: none;
+    margin-left: 15px;
+    margin-top: 33px;
+  }
+
+  .show-more {
+    position: absolute;
+    margin-left: 414px;
+    margin-top: -430px;
+    padding: 0 0 0 0;
+    width: 100%;
+    max-width: 324px;
+    height: 430px;
+    border: 1px solid #e6e6e6;
+
+    &__wrapper {
+      width: 100%;
+      max-width: 280px;
+      margin: 0 auto;
+    }
+
+    &__logo-plus {
+      display: flex;
+      justify-content: center;
+      background: url(../img/icon-plus-mobile.svg) no-repeat;
+      background-size: 60px 60px;
+      width: 60px;
+      height: 60px;
+      margin: 0 auto;
+      margin-top: 54px;
+    }
+
+    &__text {
+      font-size: 20px;
+      text-align: center;
+      text-transform: uppercase;
+      margin-top: 27px;
+      width: 150px;
+      margin: 0 auto;
+      margin-top: 50px;
+    }
+
+    &__text--small {
+      font-size: 16px;
+      font-family: 'Arial', sans-serif;
+      text-align: center;
+      margin-top: 15px;
+      width: 170px;
+      margin: 0 auto;
+      margin-top: 30px;
+    }
+
+    &__button {
+      cursor: pointer;
+      font-size: 16px;
+      width: 250px;
+      height: 40px;
+      text-transform: uppercase;
+      color: #444444;
+      background-color: #f2f2f2;
+      margin-top: 58px;
+      margin-left: 15px;
+      border: none;
+      outline: none;
+      font-family: 'Oswald', sans-serif;
+    }
+  }
+
+  .additional-items {
+    width: 100%;
+    max-width: @tablet-width;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 72px;
+
+    &__main-title {
+      width: 100%;
+      max-width: 430px;
+      font-size: 36px;
+      padding: 0px 35px 0px 35px;
+      text-align: center;
+      border-bottom: none;
+      background-color: white;
+      font-weight: normal;
+      margin: 0 auto;
+      z-index: 2;
+      margin-left: 30px;
+      margin-bottom: 80px;
+    }
+
+    &__decorative {
+      display: inline-block;
+      position: relative;
+      width: 100%;
+      height: 3px;
+      background-color: #68b738;
+      left: 0px;
+      top: -100px;
+      z-index: 1;
+    }
+
+    &__title {
+      font-size: 16px;
+      font-weight: normal;
+      text-transform: uppercase;
+    }
+
+    &__descrtiption {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 226px;
+      margin-top: -25px;
+      margin-left: 446px;
+    }
+
+
+    &__descrtiption--2 {
+      width: 163px;
+      margin-left: 508px;
+    }
+
+    &__descrtiption--3 {
+      width: 142px;
+      margin-left: 530px;
+    }
+
+  }
+
+  .additional-item {
+    padding: 20px 0 28px 0;
+    width: 100%;
+    max-width: 708px;
+    border-bottom: 1px solid #e6e6e6;
+    border-left: 1px solid #e6e6e6;
+    border-right: 1px solid #e6e6e6;
+    margin: 0 auto;
+
+    &--border-top {
+      border-top: 1px solid #e6e6e6;
+    }
+
+    &__title {
+      font-size: 20px;
+      font-weight: normal;
+      text-transform: uppercase;
+      margin-left: 38px;
+    }
+
+    &__descrtiption-text {
+      font-size: 16px;
+      font-family: 'Arial', sans-serif;
+    }
+
+    &__title-descrtiption {
+      display: flex;
+      width: 100%;
+      max-width: 280px;
+      justify-content: space-between;
+      margin-top: 15px;
+    }
+  }
+
+  .present {
+    margin-top: 40px;
+    width: 100%;
+    max-width: 320px;
+    height: 290px;
+    text-align: center;
+
+    &__img-text {
+      margin-top: -230px;
+      margin-bottom: 100px;
+    }
+
+    &__description {
+      font-size: 16px;
+      font-family: 'Arial', sans-serif;
+      color: white;
+      width: 170px;
+      text-align: center;
+      margin: 0 auto;
+      margin-top: 57px;
+    }
+  }
+
+  .button {
+    cursor: pointer;
+    font-family: 'Oswald', sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: white;
+    background-color: #68b738;
+    width: 250px;
+    height: 40px;
+    border: none;
+    outline: none;
+    margin-left: 15px;
+  }
+
+  .button-margin {
+    cursor: pointer;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: white;
+    background-color: #68b738;
+    width: 633px;
+    height: 40px;
+    margin-top: 25px;
+    border: none;
+    outline: none;
+    margin-left: 38px;
+  }
+
+
+  .present {
+    margin-top: 40px;
+    width: 100%;
+    max-width: @tablet-width;
+    height: 190px;
+    text-align: center;
+
+    &__case-photo {
+      background: url(../img/gift-photo-tablet@1x.jpg) no-repeat;
+      background-size: 708px 200px;
+      width: 708px;
+      height: 200px;
+      margin: 0 auto;
+    }
+
+    &__img-text {
+      margin-top: -230px;
+      margin-bottom: 100px;
+    }
+
+    &__description {
+      font-size: 16px;
+      font-family: 'Arial', sans-serif;
+      color: white;
+      width: 170px;
+      text-align: left;
+      margin-left: 470px;
+      margin-top: 45px;
+    }
+
+    &__present-logo {
+      position: relative;
+      background: url(../img/icon-gift.svg) no-repeat;
+      background-size: 55px 60px;
+      width: 55px;
+      height: 60px;
+      margin-left: 121px;
+      top: 92px;
+    }
+
+  }
+
+}
+
+
+
+
+
+@media (min-width: @desktop-width) {
+
 }

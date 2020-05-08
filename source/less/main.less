@@ -144,16 +144,21 @@
 
 
 @media (min-width: @desktop-width) {
-  .page-header {
+  .page-main {
     max-width: @desktop-width;
+    margin-bottom: 400px;
 
     &__background-img {
+      visibility: visible;
+      position: absolute;
+      top: 0px;
+      left: 720px;
       display: flex;
-      background-image: url(../img/index-can-desktop@1x.png) no-repeat;
+      background-image: url(../img/index-background-desktop.jpg) no-repeat;
       background-size: 720px 696px;
       width: 720px;
       height: 696px;
-      border: 1px solid red;
+      z-index: 1;
     }
 
     &__title {
@@ -166,6 +171,7 @@
       z-index: 2;
       width: 420px;
       line-height: 1.1;
+      margin-left: 68px;
     }
 
     &__title-text {
@@ -180,7 +186,7 @@
       color: black;
       width: 290px;
       right: 10px;
-      margin-left: 10px;
+      margin-left: 78px;
     }
 
 
@@ -190,8 +196,8 @@
       width: 244px;
       height: 50px;
       z-index: 2;
-      top: -580px;
-      margin-left: 120px;
+      top: 112px;
+      margin-left: 190px;
     }
 
     &__wrapper-text {
@@ -207,14 +213,16 @@
     }
 
     &__box-nutrition {
-      position: relative;
-      background: url(../img/index-can-tablet@1x.jpg) no-repeat;
-      background-size: 690px 609px;
-      width: 660px;
-      height: 609px;
+      position: absolute;
+      background: url(../img/index-can-desktop@1x.png) no-repeat;
+      background-size: 552px 499px;
+      width: 552px;
+      height: 499px;
       z-index: 1;
-      margin-top: 100px;
-      right: 15px;
+      margin-top: 0px;
+      top: 154px;
+      left: 518px;
+      right: 0px;
     }
 
   }
